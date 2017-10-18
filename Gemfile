@@ -12,6 +12,7 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
+gem 'slim'
 gem 'sass-rails', '~> 5.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -21,6 +22,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'after_party'
+gem 'rollbar'
+gem 'whenever', require: false
+#gem 'gruff'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

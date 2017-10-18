@@ -1,0 +1,3 @@
+<% Achivment.all.each_with_object('') do |achivment, result| %>
+  result << (detailed ? achivment_report(achivment, user) : short_achivment_report(achivment, user))
+<% end %>

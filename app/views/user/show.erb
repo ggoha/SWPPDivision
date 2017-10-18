@@ -1,0 +1,10 @@
+<%=user.company.smile%><b><%=game_name(user)%></b> <i><%=user.division.title%></i>
+🔨<%=user.practice%> 🎓<%=user.theory%> 🐿<%=user.cunning%> 🐢<%=user.wisdom%> <%=endurance(user)%>
+🎚<%=user.level%> <%=stars(user)%> 😡<%=user.rage%> 😔<%=user.company.sadness%>
+
+📋<%=user.reports.count%>(<%=report_stats(user.reports)%>)
+⚔️ <%=user.reports.sum(:kill)%>(<%=report_kill(user.reports)%>)
+💵<%=user.reports.sum(:money)%>
+🏆<%=user.reports.sum(:score)%>
+🏅<%=user.mvp%>
+<%=achivments_report(user)%>

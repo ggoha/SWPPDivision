@@ -1,0 +1,7 @@
+<% Achivmnet.all.each do |achivement| %>
+  <% if user.achivments.include? achivment %>
+    <%= description_achivment(achivment) %>
+  <% else %>
+    <%= '❔' if achivment.public? %> 
+  <% end %>
+<% end %>
