@@ -24,7 +24,7 @@
   end 
 
   def get_regexp(text, regexp)
-    text.scan(regexp)[0][0] if text.scan(regexp)[0] 
+    text.scan(regexp)[0][0] if text.scan(regexp)[0]
   end
 
   def practice_buff(practice, user)

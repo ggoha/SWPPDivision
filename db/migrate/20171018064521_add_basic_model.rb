@@ -10,11 +10,10 @@ class AddBasicModel < ActiveRecord::Migration[5.0]
       t.integer  :company_id, null: false
       t.integer  :price, null: false
       t.datetime :at, null: false
-      t.string   :name
     end
     create_table :divisions do |t|
       t.string  :title, null: false
-      t.string  :telegram_id, null: false
+      t.string  :telegram_id
       t.integer :company_id, null: false
       t.boolean :autopin, default: false
       t.string  :message,        default: '15 минут до взлома, не забудьте поесть и слить деньги в акции'
@@ -34,7 +33,6 @@ class AddBasicModel < ActiveRecord::Migration[5.0]
       t.integer  :current_sadness
       t.float    :percent_score
       t.boolean  :result
-      t.string   :name
     end
    create_table :users do |t|
       t.string   :game_name, null: false

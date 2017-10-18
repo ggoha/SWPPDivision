@@ -25,7 +25,7 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
   def give(*)
     return unless @user
     @user.add_achivment(Achivment.first) if Digest::MD5.hexdigest(@user.game_name) == value[0]
-  end 
+  end
 
   def summary(*)
     respond_with :message, text: render_to_string('division/summary', @division), parse_mode: 'HTML' if @division
